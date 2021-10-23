@@ -140,10 +140,10 @@ header {
 
 .link:hover,
 .link:focus,
-.contact-link:hover,
-.contact-link:focus,
 .contact-footer:hover,
-.contact-footer:focus {
+.contact-footer:focus,
+.icon:hover,
+.icon:focus {
   color: var(--logo-accent-color);
 }
 
@@ -158,12 +158,19 @@ header {
 }
 
 .contact-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   text-decoration: none;
+}
+
+.contact-icon {
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* Фильтр */
@@ -352,7 +359,7 @@ header {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images3/hero.jpg");
+    url("../images3/imghero1.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
