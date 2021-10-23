@@ -344,12 +344,19 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images3/Шапка.png");
+    url("../images3/hero.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--footer-background-color);
 }
 
@@ -412,7 +419,7 @@ header {
 /* Чем мы занимаемся */
 
 .photo-section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .photo-flex {
@@ -424,7 +431,7 @@ header {
 }
 
 .header-text {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-weight: 700;
