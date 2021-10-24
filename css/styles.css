@@ -198,6 +198,8 @@ header {
 .current-filter:focus {
   color: var(--primary-white-color);
   background-color: var(--logo-accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), -0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .filter-button + .filter-button {
@@ -235,6 +237,19 @@ header {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  border-color: rgba(238, 238, 238, 1);
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), -0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .team-works {
@@ -277,6 +292,30 @@ header {
 
 .footer-nav {
   text-align: left;
+}
+
+.adr-soc {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-header {
+  margin-bottom: 20px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-style: 700px;
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  letter-spacing: 3%;
+}
+
+.footer-right {
+  text-align: center;
 }
 
 .footer-link {
@@ -329,6 +368,42 @@ header {
 
 .mail-footer {
   margin-bottom: 9px;
+}
+
+.social-footer-link {
+  display: flex;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right {
+  margin-left: 70px;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-footer-icon {
+  fill: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--logo-accent-color);
+}
+
+.social-footer-item + .social-footer-item {
+  padding-left: 10px;
 }
 
 /* оформление index.html */
@@ -415,6 +490,20 @@ header {
   width: 270px;
 }
 
+.adv-bg {
+  display: flex;
+  height: 120px;
+  background-color: var(--button-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-icon {
+  display: block;
+}
+
 .section-title {
   margin-bottom: 10px;
 }
@@ -462,6 +551,10 @@ header {
 
 .team-info {
   background-color: white;
+  box-shadow: -0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .team-info + .team-info {
@@ -477,6 +570,12 @@ header {
   line-height: 1.17;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-background {
   background-color: var(--button-color);
   letter-spacing: 0.03em;
@@ -487,4 +586,86 @@ header {
 .position {
   font-size: 16px;
   line-height: 1.17;
+  padding-bottom: 16px;
+}
+
+.social-link {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--logo-accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+/* Наши клиенты */
+
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-header {
+  padding-bottom: 50px;
+  font-style: 700px;
+  font-size: 36px;
+  letter-spacing: 3%;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--logo-accent-color);
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--logo-accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
