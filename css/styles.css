@@ -403,7 +403,7 @@ header {
 }
 
 .social-footer-item + .social-footer-item {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 /* оформление index.html */
@@ -586,7 +586,7 @@ header {
 .position {
   font-size: 16px;
   line-height: 1.17;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .social-link {
@@ -626,7 +626,7 @@ header {
 }
 
 .clients-header {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-style: 700px;
   font-size: 36px;
   letter-spacing: 3%;
